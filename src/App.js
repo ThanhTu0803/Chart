@@ -163,7 +163,7 @@ function App() {
       <br></br>
 <br></br>
 
-      <h1> THỐNG KÊ TIÊU THỤ SẢN PHẨM</h1>
+      <h1> THỐNG KÊ TIÊU THỤ THỰC PHẨM TƯƠI SỐNG</h1>
       <Line 
        data={{
         labels:['Cá lóc','Thịt heo','Thịt gà','Thịt vịt','Thịt bò'],
@@ -251,6 +251,187 @@ function App() {
         
       </Line>
 
+      <br></br>
+<br></br>
+
+      <h1> THỐNG KÊ TIÊU THỤ THỰC PHẨM SẠCH</h1>
+      <Line 
+       data={{
+        labels:['Rau xà lách','Cà chua','Rau muống','Bí đao','Ớt'],
+        datasets:[{
+          label:'Ngày 20/8',
+          axis: 'x',
+          fill: false,
+          data:[65, 59, 30, 20, 56],
+          backgroundColor:'#90C8AC',
+          borderColor: '#90C8AC'
+        },
+        {
+          label:'Ngày 21/8',
+          fill: false,
+          data:[50, 40, 80, 45, 33],
+          backgroundColor:'#F4BFBF',
+          borderColor: '#F4BFBF'
+        },
+        {
+          label:'Ngày 22/8',
+          axis: 'x',
+          fill: false,
+          data:[65, 59, 80, 81, 56],
+          backgroundColor:'#8FBDD3',
+          borderColor: '#8FBDD3'
+        },
+        {
+          label:'Ngày 23/8',
+          axis: 'x',
+          fill: false,
+          data:[65, 59, 80, 81, 56],
+          backgroundColor:'#BAABDA',
+          borderColor: '#BAABDA'
+        },
+        ]
+      }}
+      options={{
+        tooltips:{
+          mode:'index',
+          callbacks:{
+            label:function(toolTipItem){
+              return ("Số lượng (Sản phẩm): "+toolTipItem.value)
+            }
+          }
+
+        },
+        scales:{
+          xAxes:[
+            {
+              gridLines:{
+              color:'#898AA6'
+            },
+              scaleLabel:{
+                labelString:'Sản phẩm',
+                display:true,
+                fontColor:'#0096FF',
+                fontSize:20
+              },
+              ticks:{
+                fontColor:'#876445'
+              }
+            }
+          ],
+          yAxes:[
+          {
+            gridLines:{
+              color:'#898AA'
+            },
+            scaleLabel:{
+                labelString:'Số lượng (Sản phẩm)',
+                display:true,
+                fontColor:'#0096FF',
+                fontSize:20,
+              },
+            ticks:{
+              beginAtZero:true,
+              fontColor:'#876445',
+              
+            }
+          }
+          ]
+        }
+      }}
+      >
+        
+      </Line>
+
+      <br></br>
+<br></br>
+
+      <h1> THỐNG KÊ TIÊU THỤ GIA VỊ</h1>
+      <Line 
+       data={{
+        labels:['Hạt nêm','Bột ngọt','Nước mắm','Đường','Muối'],
+        datasets:[{
+          label:'Ngày 20/8',
+          axis: 'x',
+          fill: false,
+          data:[65, 59, 30, 20, 56],
+          backgroundColor:'#90C8AC',
+          borderColor: '#90C8AC'
+        },
+        {
+          label:'Ngày 21/8',
+          fill: false,
+          data:[50, 40, 80, 45, 33],
+          backgroundColor:'#F4BFBF',
+          borderColor: '#F4BFBF'
+        },
+        {
+          label:'Ngày 22/8',
+          axis: 'x',
+          fill: false,
+          data:[65, 59, 80, 81, 56],
+          backgroundColor:'#8FBDD3',
+          borderColor: '#8FBDD3'
+        },
+        {
+          label:'Ngày 23/8',
+          axis: 'x',
+          fill: false,
+          data:[65, 59, 80, 81, 56],
+          backgroundColor:'#BAABDA',
+          borderColor: '#BAABDA'
+        },
+        ]
+      }}
+      options={{
+        tooltips:{
+          mode:'index',
+          callbacks:{
+            label:function(toolTipItem){
+              return ("Số lượng (Sản phẩm): "+toolTipItem.value)
+            }
+          }
+
+        },
+        scales:{
+          xAxes:[
+            {
+              gridLines:{
+              color:'#898AA6'
+            },
+              scaleLabel:{
+                labelString:'Sản phẩm',
+                display:true,
+                fontColor:'#0096FF',
+                fontSize:20
+              },
+              ticks:{
+                fontColor:'#876445'
+              }
+            }
+          ],
+          yAxes:[
+          {
+            gridLines:{
+              color:'#898AA'
+            },
+            scaleLabel:{
+                labelString:'Số lượng (Sản phẩm)',
+                display:true,
+                fontColor:'#0096FF',
+                fontSize:20,
+              },
+            ticks:{
+              beginAtZero:true,
+              fontColor:'#876445',
+              
+            }
+          }
+          ]
+        }
+      }}
+      >
+        
+      </Line>
     </div>
   );
 }
